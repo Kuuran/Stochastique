@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class Graphe {
 
-    private ArrayList<Integer> points;
+    private ArrayList<Point> points;
 
-    public Graphe(ArrayList<Integer> p){
+    public Graphe(ArrayList<Point> p){
         points = new ArrayList<>(p);
     }
 
-    public ArrayList<Integer> getPoints() {
+    public ArrayList<Point> getPoints() {
         return points;
     }
 
-    public void setPoints(ArrayList<Integer> points) {
+    public void setPoints(ArrayList<Point> points) {
         this.points = points;
     }
 
