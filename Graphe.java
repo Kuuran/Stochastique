@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-//todo faut refaire cette classe, on stoque pas les bonnes data dedans (pour l'instant on peut pas calculer le cout)
-
 public class Graphe {
 
     private ArrayList<Point> points;
@@ -32,8 +30,15 @@ public class Graphe {
      * Calcul du cout total du graphe
      * @return
      */
-    public float cout(){
-        //todo bah juste on additionne les couts des arretes mais encore une fois faut revoir la structure avant
-        return 0;
+    public double cout(){
+        Point buffer = null;
+        double result = 0;
+        for (Point p : points){
+            if (buffer != null){
+                result += p.distance(buffer);
+            }
+            buffer = p;
+        }
+        return result;
     }
 }
