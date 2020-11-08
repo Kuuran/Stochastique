@@ -18,6 +18,10 @@ public class RecuitStep {
         //todo calcul du nouveau cout pour savoir si on garde la permutation
         //il faut un graphe qui agisse comme buffer pour pouvoir revenir a celui d'avant (ou on refait juste la permutation a l'envers (probablement plus simple)
 
+        /*
+        du coup on crée un graphe en prenant le voisins les plus proches puis on fait des permutations a partir de la
+         */
+
 
         return false;
     }
