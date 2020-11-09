@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Graphe {
 
-    public ArrayList<Point> points;
+    private ArrayList<Point> points;
 
     public Graphe(ArrayList<Point> p){
         points = new ArrayList<>(p);
