@@ -6,11 +6,20 @@
 public class Main {
 
     public static void main(String[] argc){
-        //todo on veut avoir le nom du fichier a parser en parametre de lancement et aussi le nombre de steps
-        //todo on parse le graphe de départ puis on run le recuit
-        //on crée un parseur dans une classe a part?
 
+        if (argc[0].matches("%.tsp")){
+            IO io = new IO();
+            Graphe g;
+            g = io.parse(argc[0]);
+            if (!argc[1].isEmpty()){
+                int nbStep;
+                nbStep = Integer.parseInt(argc[1]);
+
+                RecuitSimule rs = new RecuitSimule();
+                Graphe resultat = rs.run(g, nbStep);
+
+                io.ecrit(g, "out/resultat.txt");
+            }
+        }
     }
-
-
 }
