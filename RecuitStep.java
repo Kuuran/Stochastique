@@ -9,7 +9,7 @@ public class RecuitStep {
      * @param g
      * @return pour l'instant si ça s'est bien exécuté, a terme probablement le résultat (un indice de performance et le graphe résultant?)
      */
-    public boolean run(Graphe g, double temperature){
+    public Graphe run(Graphe g, double temperature){
 
         //todo on veut faire des permutations aléatoires selon l'algo
         //on garde les permutations déja effectuées pour pas les refaire? ou que les rejetées?
@@ -21,7 +21,7 @@ public class RecuitStep {
          */
 
 
-        return false;
+        return null;
     }
 
 }
