@@ -8,12 +8,10 @@ public class Main {
     public static void main(String[] argc){
 
         if (argc[0].endsWith(".tsp")){
-            System.out.println(argc[0]);
             IO io = new IO();
             Graphe g;
             g = io.parse(argc[0]);
             if (!argc[1].isEmpty()){
-                System.out.println(argc[1]);
                 int nbStep;
                 nbStep = Integer.parseInt(argc[1]);
 
