@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Graphe {
 
@@ -15,7 +16,7 @@ public class Graphe {
      * @param e2
      */
     public void permutation(int e1, int e2){
-        //todo ya des algos bien qui sont sur internet
+        Collections.swap(points, e1, e2);
     }
 
     /**
