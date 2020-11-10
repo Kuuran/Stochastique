@@ -1,34 +1,29 @@
-
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Graphe {
 
-	private ArrayList<Point> points;
+    private ArrayList<Point> points;
 
     public Graphe(ArrayList<Point> p){
         points = new ArrayList<>(p);
     }
 
-    
-    /*Ajout de la fonction add par Haithem*/
-    
-    public ArrayList<Point> getPoints(){
-    	return points;
+    public int size(){
+        return points.size();
     }
-    
-    
+
     public void add(Point p) {
-    	this.getPoints().add(p);
+    	points.add(p);
     }
 
     /**
-     * Premute deux éléments du graphe
+     * Premute deux éléments du graphe a partire de leurs indices
      * @param e1
      * @param e2
      */
     public void permutation(int e1, int e2){
-        //todo ya des algos bien qui sont sur internet
+        Collections.swap(points, e1, e2);
     }
 
     /**
@@ -46,5 +41,4 @@ public class Graphe {
         }
         return result;
     }
-    
 }
